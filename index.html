@@ -18,11 +18,13 @@
 
       <div class="logo">
         <a href="index.html">
-        <img src="pik/huncho-high-resolution-logo-black-on-white-background.png" alt="logo" width="140">
+        <img src="pik/huncho-high-resolution-logo-black-on-white-background.png" 
+         alt="logo" width="140" />
       </a>
+      
       </div>
 
-      <nav>
+      <nav class="menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#">Shop</a></li>
@@ -34,6 +36,8 @@
       <div class="button">
         <input type="button" class="btn" value="Login">
         <input type="button"  class="btn"value="Sign Up">
+
+        <img src="pik/ham.png" class="hamburger" alt="open" width="30px" />
       </div> 
       
     </div>
@@ -215,7 +219,7 @@
 <footer>
     <div class="footer.container">
       <div class="logo-footer">
-        <a href="fashion.html">
+        <a href="index.html" target="_top">
         <img src="pik/huncho-high-resolution-logo-white-on-black-background.png" width="120">
       </a>
       </div>
@@ -242,7 +246,7 @@
 
         <div class="col-3">
           <div class="copyright-info">
-            <p class="cpy-info">&copy Copyright, Elvis Oduro 2022.
+            <p class="cpy-info">&copy Copyright, Huncho 2022.
                All Right Reserved</p>
           </div>
         </div>
@@ -254,6 +258,27 @@
  
 
 </footer>
+
+
+<!--Javascript for toggle menu start-->
+<script>
+    const openn = document.querySelector(".hamburger");
+      const menu = document.querySelector(".menu");
+      openn.addEventListener("click", () => {
+        menu.style.display === "none"
+          ? (menu.style.display = "block")(
+              openn.setAttribute("src", "./pik/close.webp")
+            )
+          : (menu.style.display = "none")(
+              openn.setAttribute("src", "./pik/ham.png")
+            );
+      });
+
+
+</script>
+<!--Javascript for toggle menu end-->
+
+
    </body>
 
    </html>
